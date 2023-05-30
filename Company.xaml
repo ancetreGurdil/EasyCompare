@@ -1,0 +1,91 @@
+﻿<Window x:Class="EasyCompare.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EasyCompare" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="60"></Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+
+
+        <Grid Height="93" Background="#208eb5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" MinHeight="61"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content=" Point P" VerticalAlignment="Center" Height="41" Width="NaN" Margin="10,0,10,0" FontSize="25"/>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="Commandes" Margin="20,0,0,0"></Label>
+                <Label Grid.Row="0" Grid.Column="1" Content="Clients" Margin="20,0,0,0"></Label>
+                <Label Grid.Row="0" Grid.Column="2" Content="Factures" Margin="20,0,0,0"></Label>
+                <Label Grid.Row="0" Grid.Column="3" Content="Stock" Margin="20,0,0,0"></Label>
+
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+
+                </Grid.ColumnDefinitions>
+                <Image Source="Image/plus.png" Margin="100,0,0,0" Grid.Row="0" Grid.Column="0" Width="25"/>
+                <Image Source="Image/crayon.png" Margin="40,0,0,0" Grid.Row="0" Grid.Column="1"/>
+                <Image Source="Image/poubelle-de-recyclage.png" Margin="40,0,0,0" Grid.Row="0" Grid.Column="2" Width="25"/>
+                <Image Source="Image/sauvegarder.png" Margin="40,0,0,0" Grid.Row="0" Grid.Column="3" Width="25"/>
+                <Image Source="Image/points-de-suspension-a-trois-points.png" Margin="40,0,0,0" Grid.Row="0" Grid.Column="4"/>
+            </Grid>
+
+        </Grid>
+
+        <Grid VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Content="Nom du client :" Margin="35,0,0,0"></Label>
+            <TextBox Grid.Row="1" Grid.Column="0" Height="20" Margin="35,0,172,0"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Nom du client :" Margin="35,0,0,0"></Label>
+            <TextBox Grid.Row="3" Grid.Column="0" Height="20" Margin="35,0,172,0"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Content="Adresse :" Margin="35,0,0,0"></Label>
+            <TextBox Grid.Row="5" Grid.Column="0" Height="20" Margin="35,0,172,0"/>
+            <TextBox Grid.Row="6" Grid.Column="0" Height="20" Margin="35,10,172,0"/>
+
+        </Grid>
+    </StackPanel>
+</Window>
